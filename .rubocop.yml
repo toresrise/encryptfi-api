@@ -70,6 +70,7 @@ AllCops:
     - 'tmp/**/*'
     - 'vendor/**/*'
     - '.git/**/*'
+    - 'bin/*'
   # Default formatter will be used if no `-f/--format` option is given.
   DefaultFormatter: progress
   # Cop names are displayed in offense messages by default. Change behavior
@@ -113,7 +114,7 @@ AllCops:
   # the `--enable-pending-cops` command-line option.
   # When `NewCops` is `disable`, pending cops are disabled in bulk. Can be overridden by
   # the `--disable-pending-cops` command-line option.
-  NewCops: pending
+  NewCops: enable
   # Enables the result cache if `true`. Can be overridden by the `--cache` command
   # line option.
   UseCache: true
@@ -981,11 +982,6 @@ Layout/LineContinuationLeadingSpace:
   AutoCorrect: false
   SafeAutoCorrect: false
   VersionAdded: '1.31'
-  VersionChanged: '<<next>>'
-  EnforcedStyle: trailing
-  SupportedStyles:
-    - leading
-    - trailing
 
 Layout/LineContinuationSpacing:
   Description: 'Checks the spacing in front of backslash in line continuations.'
@@ -3441,7 +3437,7 @@ Style/DocumentDynamicEvalDefinition:
 
 Style/Documentation:
   Description: 'Document classes and non-namespace modules.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.9'
   AllowedConstants: []
   Exclude:
@@ -3510,7 +3506,6 @@ Style/EmptyElse:
     - empty
     - nil
     - both
-  AllowComments: false
 
 # Style/EmptyHeredoc:
 #   Description: 'Checks for using empty heredoc to reduce redundancy.'
