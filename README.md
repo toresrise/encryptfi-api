@@ -1,26 +1,44 @@
-# README
+<h1 align="center">Encryptfi (API)</h1>
 
-A simple and secure way to transfer files.
+<p align="center">
+    <img align="center" src="./public/logo.png" width="12%" alt="Encryptfi logo" />
+    <br>
+    <br>
+    <i>A simple, transparent, anonymous and secure way to transfer files.</i>
+</p>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<hr>
 
-Things you may want to cover:
+## Install prerequisites
 
-* Ruby version
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Bundler](https://bundler.io/)
+- [Ruby on Rails](https://rubyonrails.org/)
 
-* System dependencies
+## Setup project
 
-* Configuration
+### Set environment variables
 
-* Database creation
+```
+ENCRYPTFI_API_DATABASE_URL=YOUR_POSTGRESQL_CONNECTION_URL_HERE
+```
 
-* Database initialization
+### Install project gems
 
-* How to run the test suite
+```
+bundle install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Start application
 
-* Deployment instructions
+```
+rails s
+```
 
-* ...
+## Figma (prototype)
+
+See application components in our [Figma project](https://www.figma.com/file/SADKp23JNkpiVvhJsRZFAk/Web).
+
+## Community
+
+Our code can be copied and distributed for everybody. If you find a bug or improvement, report an [issue](https://github.com/toresrise/encryptfi-web/issues), please.
