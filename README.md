@@ -19,19 +19,19 @@
 
 ### Set environment variables
 
-```
+```bash
 ENCRYPTFI_API_DATABASE_URL=YOUR_POSTGRESQL_CONNECTION_URL_HERE
 ```
 
 ### Install project gems
 
-```
+```bash
 bundle install
 ```
 
 ### Start application
 
-```
+```bash
 rails s
 ```
 
