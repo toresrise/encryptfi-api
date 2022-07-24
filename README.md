@@ -17,10 +17,14 @@
 
 ## Setup project
 
-### Set environment variables
+### Create .env file and set required environment variables
 
 ```bash
-ENCRYPTFI_API_DATABASE_URL=YOUR_POSTGRESQL_CONNECTION_URL_HERE
+touch .env
+```
+
+```bash
+ENCRYPTFI_API_DATABASE_URL="YOUR_POSTGRESQL_CONNECTION_URL_HERE"
 ```
 
 ### Install project gems
