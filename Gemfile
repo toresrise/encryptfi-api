@@ -42,6 +42,7 @@ gem 'bootsnap', require: false
 gem 'jsonapi-serializer'
 
 group :test do
+  gem 'shoulda-matchers', '~> 5.0'
   gem 'simplecov', require: false
 end
 
